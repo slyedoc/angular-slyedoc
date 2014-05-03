@@ -39,23 +39,20 @@ Additional WebStorm features:
 
 ## Getting Started
 
-### Install Yeoman
+Install Yeoman
 
 ```
 $ npm install -g yo
 ```
 
-### Download angular-slydoc generator
+Download angular-slydoc generator
 
 ```
-$ npm install -g slyedoc/angular-slyedoc
+$ npm install -g generator-angular-slyedoc
 ```
 
-Note: git must be in your path for this to work, I haven't published this as npm package yet.
+Initiate the generator:
 
-### Initiate the generator:
-
-Note that for first time
 ```
 $ yo angular-slyedoc
 ```
