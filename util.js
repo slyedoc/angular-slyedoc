@@ -59,13 +59,12 @@ function rewriteFile(args) {
 
 function getContext(generator) {
 
-    //not sure why dasherize started adding - at the start, this removes it
     var context = {
-        dasherizeName: generator._.dasherize(generator.name).trim('-'),
+        dasherizeName: generator._.dasherize(generator.name.toLowerCase()),
         cameledName: generator._.camelize(generator.name),
         classedName: generator._.classify(generator.name)
     };
-    console.log(context);
+//    console.log(context);
     return context;
 }
 
