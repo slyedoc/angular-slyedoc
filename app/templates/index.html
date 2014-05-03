@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title><%= site_name %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="app.css">
+    <!-- endbuild -->
+</head>
+<body ng-controller="AppCtrl">
+
+<div ng-include="'components/nav/nav.html'"></div>
+
+<div ui-view></div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- manual:js -->
+<script src="app.js"></script>
+<script src="app-controller.js"></script>
+<script src="home/home-controller.js"></script>
+<script src="components/nav/nav-controller.js"></script>
+<!-- endManual -->
+
+<!-- yeoman:js -->
+<!-- endYeoman -->
+
+</body>
+</html>

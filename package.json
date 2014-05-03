@@ -1,0 +1,57 @@
+{
+  "name": "generator-angular-slyedoc",
+  "version": "0.0.6",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "slyedoc/angular-slyedoc",
+  "author": {
+    "name": "Patrick Towles",
+    "email": "james.towles@gmail.com",
+    "url": "https://github.com/slyedoc"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app",
+    "controller",
+    "directive",
+    "factory",
+    "filter",
+    "route",
+    "service",
+    "util.js"
+  ],
+  "keywords": [
+    "yeoman-generator",
+      "scaffold",
+      "framework",
+      "component",
+      "front-end",
+      "app",
+      "angular",
+      "slyedoc"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "chalk": "~0.4.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-conventional-changelog": "~1.1.0",
+    "grunt-release": "~0.6.0",
+    "load-grunt-tasks": "~0.3.0",
+    "mocha": "*",
+    "semver": "~2.2.1",
+    "underscore.string": "~2.3.1",
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}
