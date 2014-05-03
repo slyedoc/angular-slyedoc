@@ -52,7 +52,7 @@ Generator.prototype.scaffoldFolders = function () {
     var context = {
         dasherizeName: this._.dasherize(this.appName).trim('-'),
         cameledName: this._.camelize(this.appName),
-        classedName: this.generator._.classify(this.appName),
+        classedName: this._.classify(this.appName),
         site_name: this.appName
     };
 
@@ -83,7 +83,7 @@ Generator.prototype.scaffoldFolders = function () {
     this.template("bower.json", "bower.json", context);
     this.template("Gruntfile.js", "Gruntfile.js", context);
 
-    this.template('karma.conf.js', 'karma.conf.js');
+    this.template('karma.conf.js', 'karma.conf.js', context);
 };
 
 

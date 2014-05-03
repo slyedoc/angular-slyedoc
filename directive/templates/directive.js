@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @ngdoc directive
+ * @ngDoc directive
  * @name <%= cameledName %>
  * @param {expression} <%= cameledName %>
  */
