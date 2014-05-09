@@ -2,20 +2,23 @@
     "name": "<%= dasherizeName %>",
     "version": "0.0.1",
     "dependencies": {
-        "angular": "1.2.15",
-        "json3": "~3.2.6",
+        "json3": "x.x.x",
         "es5-shim": "~2.1.0",
         "jquery": "~1.11.0",
-        "bootstrap": "~3.0.3",
-        "angular-resource": "1.2.15",
-        "angular-cookies": "1.2.15",
-        "angular-sanitize": "1.2.15",
-        "angular-route": "1.2.15",
+        "bootstrap": "x.x.x",
+        "angular": "x.x.x",
+        "angular-resource": "x.x.x",
+        "angular-cookies": "x.x.x",
+        "angular-sanitize": "x.x.x",
+        "angular-route": "x.x.x",
         "angular-ui-router": "x.x.x",
-        "angular-bootstrap": "x.x.x"
+        "angular-bootstrap": "x.x.x",
+        "restangular": "x.x.x",
+        "textAngular": "x.x.x",
+        "font-awesome": "x.x.x"
     },
     "devDependencies": {
-        "angular-mocks": "1.2.15",
-        "angular-scenario": "1.2.15"
+        "angular-mocks": "x.x.x",
+        "angular-scenario": "x.x.x"
     }
 }

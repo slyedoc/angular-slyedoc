@@ -312,7 +312,14 @@ module.exports = function (grunt) {
         configFile: 'karma.conf.js',
         singleRun: true
       }
-    }
+    },
+      bump: {
+          options: {
+              files: ['package.json'],
+              commit: false,
+              push: false
+          }
+      }
   });
 
 
@@ -366,4 +373,6 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.loadNpmTasks('grunt-bump');
 };
