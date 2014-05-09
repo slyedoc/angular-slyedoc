@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-slyedoc",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -29,13 +29,13 @@
   ],
   "keywords": [
     "yeoman-generator",
-      "scaffold",
-      "framework",
-      "component",
-      "front-end",
-      "app",
-      "angular",
-      "slyedoc"
+    "scaffold",
+    "framework",
+    "component",
+    "front-end",
+    "app",
+    "angular",
+    "slyedoc"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
@@ -44,6 +44,7 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.8.0",
+    "grunt-bump": "0.0.13",
     "grunt-conventional-changelog": "~1.1.0",
     "grunt-release": "~0.6.0",
     "load-grunt-tasks": "~0.3.0",
