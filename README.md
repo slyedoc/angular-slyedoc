@@ -74,6 +74,14 @@ A lot code is from the[Yeoman](http://yeoman.io) [generator-angular] (https://gi
 
 Thanks for sharing!
 
+## Webstorm Config
+
+Node.js Serve Config
+
+Javascript File
+
+<profile>\AppData\Roaming\npm\node_modules\grunt-cli\bin\grunt
+
 ## License
 
 MIT
