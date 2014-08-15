@@ -2,7 +2,7 @@
 
 var app = angular.module('app', [ 'ui.router', 'ui.bootstrap', 'restangular', 'textAngular'  ]);
 
-app.constant("apiUrl", "http://localhost/api/");
+app.constant('apiUrl', 'http://localhost/api/');
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider, RestangularProvider, apiUrl) {
     $locationProvider.html5Mode(false);
@@ -13,8 +13,8 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider, Resta
     // setup the states
     $stateProvider
         .state('home', {
-            url: "/",
-            templateUrl: "/home/home.html",
+            url: '/',
+            templateUrl: '/home/home.html',
             controller: 'HomeCtrl'
 
         });
@@ -38,7 +38,7 @@ app.filter('unsafe', function($sce) {
 
 app.directive('ngEnter', function() {
     return function(scope, element, attrs) {
-        element.bind("keydown keypress", function(event) {
+        element.bind('keydown keypress', function(event) {
             if(event.which === 13) {
                 scope.$apply(function(){
                     scope.$eval(attrs.ngEnter, {'event': event});
@@ -58,7 +58,7 @@ app.directive('customAutofocus', function() {
             scope.$watch(function(){
                 return scope.$eval(attrs.customAutofocus);
             },function (newValue){
-                if (newValue == true){
+                if (newValue === true){
                     element[0].focus();//use focus function instead of autofocus attribute to avoid cross browser problem. And autofocus should only be used to mark an element to be focused when page loads.
                 }
             });

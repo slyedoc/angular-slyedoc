@@ -66,6 +66,7 @@ $ yo angular-slyedoc:factory <name>
 $ yo angular-slyedoc:filter <name>
 $ yo angular-slyedoc:route <name>
 $ yo angular-slyedoc:service <name>
+$ yo angular-slyedoc:provider <name>
 ```
 
 ## Special Thanks

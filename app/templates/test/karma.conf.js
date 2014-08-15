@@ -3,22 +3,22 @@
 
 module.exports = function(config) {
   config.set({
-f
+
     // base path, that will be used to resolve files and exclude
-    basePath: '',
+    basePath: '../',
 
     // testing framework to use (jasmine/mocha/qunit/...)
     frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
     files: [
-        'bower_components/jquery/dist/jquery.js',
-        'bower_components/bootstrap/dist/js/bootstrap.js',
-        'bower_components/angular/angular.js',
+        // bower:js
+        // endbower
+
+        //add agnular-mocks for testing
         'bower_components/angular-mocks/angular-mocks.js',
-        'bower_components/angular-ui-router/release/angular-ui-router.js',
-        'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
-        'app/app.js',
+
+        '../app/app.js',
         'app/**/*.js',
         'app/components/**/*.js'
     ],
@@ -35,7 +35,7 @@ f
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: false,
+    autoWatch: true,
 
 
     // Start these browsers, currently available:

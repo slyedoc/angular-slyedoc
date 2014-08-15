@@ -15,7 +15,8 @@
         "angular-bootstrap": "x.x.x",
         "restangular": "x.x.x",
         "textAngular": "x.x.x",
-        "font-awesome": "x.x.x"
+        "font-awesome": "x.x.x",
+        "lodash": "x.x.x"
     },
     "devDependencies": {
         "angular-mocks": "x.x.x",

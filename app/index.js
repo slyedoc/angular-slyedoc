@@ -57,33 +57,38 @@ Generator.prototype.scaffoldFolders = function () {
     };
 
     this.mkdir("app");
-    this.copy("app.css", "app/app.css");
-    this.copy("app.js", "app/app.js");
-    this.copy("app-controller.js", "app/app-controller.js");
-    this.template("index.html", "app/index.html", context);
+    this.copy("app/app.css", "app/app.css");
+    this.copy("app/app.js", "app/app.js");
+    this.copy("app/app-controller.js", "app/app-controller.js");
+    this.template("app/index.html", "app/index.html", context);
 
     this.mkdir("app/home");
-    this.copy("home/home.html", "app/home/home.html");
-    this.copy("home/home-controller.js", "app/home/home-controller.js");
-    this.copy("home/home-controller-test.js", "app/home/home-controller-test.js");
+    this.copy("app/home/home.html", "app/home/home.html");
+    this.copy("app/home/home-controller.js", "app/home/home-controller.js");
+    this.copy("app/home/home-controller-test.js", "app/home/home-controller-test.js");
 
     this.mkdir("app/components");
     this.mkdir("app/components/nav");
-    this.template("components/nav/nav.html", "app/components/nav/nav.html", context);
-    this.copy("components/nav/nav-controller.js", "app/components/nav/nav-controller.js");
-    this.copy("components/nav/nav-controller-test.js", "app/components/nav/nav-controller-test.js");
-    //this.mkdir("e2e-tests");
+    this.template("app/components/nav/nav.html", "app/components/nav/nav.html", context);
+    this.copy("app/components/nav/nav-controller.js", "app/components/nav/nav-controller.js");
+    this.copy("app/components/nav/nav-controller-test.js", "app/components/nav/nav-controller-test.js");
 
+    this.mkdir("test");
+    this.template('test/karma.conf.js', 'test/karma.conf.js', context);
+    this.template('test/protractor-conf.js', 'test/protractor-conf.js', context);
+
+    this.mkdir("test/e2e");
 
     this.copy('editorconfig', '.editorconfig');
     this.copy('jshintrc', '.jshintrc');
     this.copy('gitignore', '.gitignore');
+    this.copy('bowerrc', '.bowerrc');
 
     this.template("package.json", "package.json", context);
     this.template("bower.json", "bower.json", context);
     this.template("Gruntfile.js", "Gruntfile.js", context);
 
-    this.template('karma.conf.js', 'karma.conf.js', context);
+
 };
 
 
