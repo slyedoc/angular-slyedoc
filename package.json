@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-slyedoc",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
