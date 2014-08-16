@@ -14,7 +14,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider, Resta
     $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: '/home/home.html',
+            templateUrl: 'home/home.html',
             controller: 'HomeCtrl'
 
         });

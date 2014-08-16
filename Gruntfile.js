@@ -7,6 +7,16 @@ module.exports = function (grunt) {
                 commit: false,
                 push: false
             }
+        },
+
+        release: {
+            options: {
+                github: {
+                    repo: 'slyedoc/angular-seed', //put your user/repo here
+                    usernameVar: 'GITHUB_USERNAME', //ENVIRONMENT VARIABLE that contains Github username
+                    passwordVar: 'GITHUB_PASSWORD' //ENVIRONMENT VARIABLE that contains Github password
+                }
+            }
         }
     });
     grunt.loadNpmTasks('grunt-bump');

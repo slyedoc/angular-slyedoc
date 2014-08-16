@@ -60,6 +60,7 @@ Generator.prototype.scaffoldFolders = function () {
     this.copy("app/app.css", "app/app.css");
     this.copy("app/app.js", "app/app.js");
     this.copy("app/app-controller.js", "app/app-controller.js");
+    this.template("app/favicon.ico", "app/favicon.ico", context);
     this.template("app/index.html", "app/index.html", context);
 
     this.mkdir("app/home");

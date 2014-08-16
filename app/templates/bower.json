@@ -2,8 +2,6 @@
     "name": "<%= dasherizeName %>",
     "version": "0.0.1",
     "dependencies": {
-        "json3": "x.x.x",
-        "es5-shim": "~2.1.0",
         "jquery": "~1.11.0",
         "bootstrap": "x.x.x",
         "angular": "x.x.x",
@@ -12,11 +10,18 @@
         "angular-sanitize": "x.x.x",
         "angular-route": "x.x.x",
         "angular-ui-router": "x.x.x",
-        "angular-bootstrap": "x.x.x",
+        "angular-animate": "x.x.x",
+        "angular-bootstrap": "~0.11.0",
         "restangular": "x.x.x",
         "textAngular": "x.x.x",
-        "font-awesome": "x.x.x",
-        "lodash": "x.x.x"
+        "lodash": "x.x.x",
+        "ng-grid": "2.0.11",
+        "zeroclipboard": "x.x.x",
+        "ng-clip": "~0.2.2",
+        "angular-loading-bar": "x.x.x",
+        "bootswatch": "x.x.x",
+        "angular-local-storage": "x.x.x",
+        "moment": "x.x.x"
     },
     "devDependencies": {
         "angular-mocks": "x.x.x",
