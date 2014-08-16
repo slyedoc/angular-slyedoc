@@ -10,30 +10,42 @@
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
+
+    <link rel="stylesheet" href="bower_components/bootswatch/cosmo/bootstrap.css" />
+
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="app.css">
     <!-- endbuild -->
+
+
+    <!-- Favorite Icon -->
+    <link rel="icon" href="favicon.ico" />
 </head>
 <body ng-controller="AppCtrl">
 
-<div ng-include="'components/nav/nav.html'"></div>
+    <div ng-include="'components/nav/nav.html'"></div>
+    <div class="container">
+        <div ui-view></div>
+        <hr>
+        <footer>
+            <div class="pull-right">Copyright &copy; 2014 </div>
+        </footer>
+    </div>
 
-<div ui-view></div>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
 
-<!-- build:js scripts/vendor.js -->
-<!-- bower:js -->
-<!-- endbower -->
-<!-- endbuild -->
+    <!-- manual:js -->
+    <script src="app.js"></script>
+    <script src="app-controller.js"></script>
+    <script src="home/home-controller.js"></script>
+    <script src="components/nav/nav-controller.js"></script>
+    <!-- endManual -->
 
-<!-- manual:js -->
-<script src="app.js"></script>
-<script src="app-controller.js"></script>
-<script src="home/home-controller.js"></script>
-<script src="components/nav/nav-controller.js"></script>
-<!-- endManual -->
-
-<!-- yeoman:js -->
-<!-- endYeoman -->
+    <!-- yeoman:js -->
+    <!-- endYeoman -->
 
 </body>
 </html>
